@@ -35,7 +35,7 @@ body,
 
 .city {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   flex-direction: column;
   padding: 40px 8%;
@@ -63,7 +63,7 @@ p {
 }
 
 .city-name {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .city-name sup {

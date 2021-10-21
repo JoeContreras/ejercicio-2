@@ -11,14 +11,8 @@ export const sendText = async (inputText) => {
     console.log(e);
   }
 };
-export const fetchWeather = async (query) => {
-  const { data } = await axios.get(URL, {
-    params: {
-      q: query,
-      units: "metric",
-      APPID: API_KEY,
-    },
-  });
+export const fetchText = async () => {
+  const { data } = await axios.get(fetch_URL);
 
   return data;
 };
