@@ -1,9 +1,9 @@
 {
-  "short_name": "Weather App",
-  "name": "Weather App PWA",
+  "short_name": "RC2 App",
+  "name": "RC2 Encryption App",
   "icons": [
     {
-      "src": "/images/logo.png",
+      "src": "/images/enc.png",
       "type": "image/png",
       "sizes": "1024x1024"
     }
