@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { sendText } from "./api/fetchText";
 
-import { fetchWeather } from "./api/fetchWeather";
 import "./App.css";
 
 const App = () => {
@@ -9,16 +9,16 @@ const App = () => {
 
   const search = async (e) => {
     if (e.key === "Enter") {
-      const data = await fetchWeather(query);
+      const data = await sendText(query);
 
-      setWeather(data);
+      // setWeather(data);
       setQuery("");
     }
   };
 
   return (
     <div className="main-container">
-{/*
+      {/*
       <div className="city">
         <div style={{ fontSize: "3em" }} className="city-temp">
           JCE-weather
@@ -43,7 +43,7 @@ const App = () => {
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={search}
       />
-      {weather.main && (
+      {/*{weather.main && (
         <div className="city">
           <h2 className="city-name">
             <span>{weather.name}</span>
@@ -62,7 +62,7 @@ const App = () => {
             <p>{weather.weather[0].description}</p>
           </div>
         </div>
-      )}
+      )}*/}
     </div>
   );
 };
