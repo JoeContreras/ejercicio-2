@@ -10,7 +10,7 @@ const App = () => {
 
   const crear = async (e) => {
     if (e.key === "Enter") {
-      const data = await sendText(query);
+      await sendText(query);
       setCallback(!callback);
 
       // setWeather(data);

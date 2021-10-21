@@ -2,7 +2,6 @@ import axios from "axios";
 
 const Send_URL = "https://p2-ej2.herokuapp.com/text/create";
 const fetch_URL = "https://p2-ej2.herokuapp.com/text/fetchMany";
-const API_KEY = "f33a484cf794d08d0148764789aaba32";
 
 export const sendText = async (inputText) => {
   try {
